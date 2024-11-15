@@ -1,6 +1,9 @@
 'use strict'
 
 const hljs = require('highlight.js')
+hljs.configure({
+  hideUpgradeWarningAcceptNoSupportOrSecurityUpdates: true,
+});
 const escape = require('escape-html')
 
 exports.name = 'highlight.js'
